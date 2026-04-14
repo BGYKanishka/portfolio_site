@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import SkillsSection from './components/SkillsSection';
-import ProjectsSection from './components/ProjectsSection';
-import ContactSection from './components/ContactSection'; 
+import HeroSection from './pages/HeroSection';
+import AboutSection from './pages/AboutSection';
+import SkillsSection from './pages/SkillsSection';
+import ProjectsSection from './pages/ProjectsSection';
+import ContactSection from './pages/ContactSection'; 
 import Footer from './components/Footer';
 
 export default function App() {

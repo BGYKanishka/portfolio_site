@@ -1,4 +1,4 @@
-import ContactForm from './ContactForm';
+import ContactForm from '../components/ContactForm';
 import { Github, Linkedin, BookOpen, Mail } from 'lucide-react';
 
 export default function ContactSection() {
