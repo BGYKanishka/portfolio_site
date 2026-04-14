@@ -1,4 +1,3 @@
-import React from 'react';
 import ContactForm from './ContactForm';
 import { Github, Linkedin, BookOpen, Mail } from 'lucide-react';
 
