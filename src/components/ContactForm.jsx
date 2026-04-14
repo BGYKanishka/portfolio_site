@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-8 bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg font-sans transition-colors duration-300">
+    <div className="w-full max-w-lg mx-auto p-8 bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-lg font-sans transition-colors duration-300">
       <h2 className="text-3xl font-light tracking-tight text-zinc-900 dark:text-zinc-100 mb-6 uppercase">
         Get In <span className="font-semibold text-blue-600 dark:text-blue-500">Touch</span>
       </h2>
