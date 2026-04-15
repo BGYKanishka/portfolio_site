@@ -8,17 +8,17 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 h-full">
 
         {/* Left Column*/}
-        <div className="flex justify-center md:justify-start self-end order-1 md:order-1 relative w-full h-full flex-col justify-end">
+        <div className="flex flex-col items-center md:items-end justify-end self-end order-1 md:order-2 relative w-full h-full">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-500 blur-[100px] w-[20rem] h-[20rem] md:w-[28rem] md:h-[28rem] lg:w-[35rem] lg:h-[35rem] opacity-30 dark:opacity-40 rounded-full animate-pulse z-0 pointer-events-none"></div>
           <img
-            src="/123.png"
+            src="/about.png"
             alt="Yehan Kanishka"
-            className="w-[22rem] md:w-[32rem] lg:w-[40rem] h-auto object-contain object-bottom origin-bottom relative z-10 transition-transform duration-700 ease-in-out hover:scale-105"
+            className="w-[20rem] md:w-[28rem] lg:w-[36rem] h-auto object-contain object-bottom origin-bottom relative z-10 transition-transform duration-700 ease-in-out hover:scale-105"
           />
         </div>
 
         {/* Right Column*/}
-        <div className="flex flex-col items-start text-left order-2 md:order-2 self-start md:pt-12 pb-6 z-20">
+        <div className="flex flex-col items-start text-left order-2 md:order-1 self-start md:pt-12 pb-6 z-20">
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 leading-[1.1]">
             Hello, I'm <br />

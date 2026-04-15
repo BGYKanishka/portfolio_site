@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
 
         {/* Left Column */}
-        <div className="flex flex-col items-start text-left z-20 order-2 md:order-1">
+        <div className="flex flex-col items-start text-left z-20 order-2 md:order-2 self-start md:pt-12">
           
           <div className="mb-8">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 leading-[1.1]">
@@ -32,16 +32,16 @@ export default function AboutSection() {
         </div>
 
       {/* Right Column */}
-        <div className="relative w-full flex justify-center md:justify-end order-1 md:order-2 mb-6 md:mb-0">
+        <div className="relative w-full flex justify-center md:justify-start order-1 md:order-1 mb-6 md:mb-0">
           
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-emerald-500 blur-[100px] w-[16rem] h-[16rem] md:w-[24rem] md:h-[24rem] lg:w-[30rem] lg:h-[30rem] opacity-20 dark:opacity-30 rounded-full animate-pulse z-0 pointer-events-none"></div>
 
-          <div className="relative z-10 w-4/5 sm:w-full max-w-xs md:max-w-sm lg:max-w-md group flex justify-center">
+          <div className="relative z-10 group flex justify-center">
             
             <img
-              src="/about.png" 
+              src="/123.png" 
               alt="Yehan Kanishka"
-              className="w-full h-auto object-contain drop-shadow-2xl grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out"
+              className="w-[20rem] sm:w-[24rem] md:w-[32rem] lg:w-[38rem] xl:w-[42rem] h-auto object-contain drop-shadow-2xl grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out"
             />
             
           </div>
