@@ -41,7 +41,7 @@ export default function AboutSection() {
             <img
               src="/123.png" 
               alt="Yehan Kanishka"
-              className="w-[20rem] sm:w-[24rem] md:w-[32rem] lg:w-[38rem] xl:w-[42rem] h-auto object-contain drop-shadow-2xl grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out"
+              className="w-[24rem] sm:w-[28rem] md:w-[36rem] lg:w-[42rem] xl:w-[48rem] h-auto object-contain drop-shadow-2xl grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out"
             />
             
           </div>
