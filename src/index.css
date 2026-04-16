@@ -1,2 +1,53 @@
 @import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
+
+.bg-celestial-arc {
+  animation: 
+    arcX 2s linear forwards,
+    arcY 2s forwards,
+    arcRotate 2s linear forwards;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+
+@keyframes arcX {
+  0% { left: -50px; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: calc(100vw + 50px); opacity: 0; }
+}
+
+@keyframes arcY {
+  0% { 
+    top: 70vh; 
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); /* ease-out */
+  }
+  50% { 
+    top: 30vh; 
+    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0); /* ease-in */
+  }
+  100% { 
+    top: 70vh; 
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes arcY {
+    0% { 
+      top: 105vh; 
+      animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); 
+    }
+    50% { 
+      top: 15vh; 
+      animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0); 
+    }
+    100% { 
+      top: 105vh; 
+    }
+  }
+}
+
+@keyframes arcRotate {
+  0% { transform: rotate(-180deg); }
+  100% { transform: rotate(180deg); }
+}

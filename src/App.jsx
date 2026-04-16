@@ -7,6 +7,7 @@ import SkillsSection from './pages/SkillsSection';
 import ProjectsSection from './pages/ProjectsSection';
 import ContactSection from './pages/ContactSection'; 
 import Footer from './components/Footer';
+import StarryBackground from './components/StarryBackground';
 
 export default function App() {
   const [isDark, setIsDark] = useState(true);
@@ -23,7 +24,8 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50 font-sans transition-colors duration-300">
+      <StarryBackground />
+      <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-transparent text-zinc-900 dark:text-zinc-50 font-sans transition-colors duration-300 relative z-10">
         
         <Header isDark={isDark} toggleTheme={toggleTheme} />
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 
@@ -14,6 +15,29 @@ export default function Header({ isDark, toggleTheme }) {
   ];
 
   return (
+    <>
+      {typeof document !== 'undefined' && createPortal(
+        <div className="fixed inset-0 pointer-events-none overflow-hidden z-[100] flex items-center justify-center">
+          {isDark ? (
+            <Moon 
+              key="moon"
+              size={64}
+              strokeWidth={1.5}
+              className="absolute text-zinc-200 drop-shadow-[0_0_15px_rgba(228,228,231,0.8)] bg-celestial-arc" 
+            />
+          ) : (
+            <Sun 
+              key="sun"
+              size={64}
+              strokeWidth={1.5}
+              fill="currentColor"
+              className="absolute text-yellow-400 drop-shadow-[0_0_25px_rgba(249,115,22,1)] bg-celestial-arc" 
+            />
+          )}
+        </div>,
+        document.body
+      )}
+
     <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         
@@ -77,5 +101,6 @@ export default function Header({ isDark, toggleTheme }) {
         </div>
       )}
     </header>
+    </>
   );
 }
