@@ -5,6 +5,12 @@ import { Sun, Moon, Menu, X } from 'lucide-react';
 
 export default function Header({ isDark, toggleTheme }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [hasToggled, setHasToggled] = useState(false);
+
+  const handleToggle = () => {
+    setHasToggled(true);
+    toggleTheme();
+  };
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -16,7 +22,7 @@ export default function Header({ isDark, toggleTheme }) {
 
   return (
     <>
-      {typeof document !== 'undefined' && createPortal(
+      {typeof document !== 'undefined' && hasToggled && createPortal(
         <div className="fixed inset-0 pointer-events-none overflow-hidden z-[100] flex items-center justify-center">
           {isDark ? (
             <Moon 
@@ -58,7 +64,7 @@ export default function Header({ isDark, toggleTheme }) {
           ))}
           
           <button 
-            onClick={toggleTheme} 
+            onClick={handleToggle} 
             className="p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 transition-colors"
           >
             {isDark ? <Sun size={18} className="text-zinc-400 hover:text-white" /> : <Moon size={18} className="text-zinc-600 hover:text-black" />}
@@ -68,7 +74,7 @@ export default function Header({ isDark, toggleTheme }) {
         {/* Mobile Menu Button */}
         <div className="flex items-center space-x-4 md:hidden">
           <button 
-            onClick={toggleTheme} 
+            onClick={handleToggle} 
             className="p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 transition-colors"
           >
             {isDark ? <Sun size={18} className="text-zinc-400" /> : <Moon size={18} className="text-zinc-600" />}
