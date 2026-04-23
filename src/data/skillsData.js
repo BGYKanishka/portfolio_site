@@ -36,7 +36,7 @@ export const skillsData = [
     skills: [
       { title: "Arduino", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" },
       { title: "Raspberry Pi", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/raspberrypi/raspberrypi-original.svg" },
-      { title: "Docker", level: "Beginner", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" },
+      { title: "Docker", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" },
       { title: "Git", level: "Advanced", icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
       { title: "Postman", level: "Advanced", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
       { title: "Figma", level: "Intermediate", icon: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" }
@@ -47,7 +47,7 @@ export const skillsData = [
     skills: [
       { title: "IntelliJ IDEA", level: "Advanced", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/intellij/intellij-original.svg" },
       { title: "VS Code", level: "Advanced", icon: "https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" },
-      { title: "Android Studio", level: "Advanced", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" },
+      { title: "Android Studio", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" },
       { title: "Xcode", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg" },
       { title: "PyCharm", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pycharm/pycharm-original.svg" }
     ]
