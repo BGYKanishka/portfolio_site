@@ -42,7 +42,8 @@ export default function AboutSection() {
           <div className="relative z-10 group flex justify-center">
             
             <img
-              src="./123.png" 
+              src="./123.webp" 
+              loading="lazy"
               alt="Yehan Kanishka"
               className="w-[24rem] sm:w-[28rem] md:w-[36rem] lg:w-[42rem] xl:w-[48rem] h-auto object-contain drop-shadow-2xl grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out"
             />

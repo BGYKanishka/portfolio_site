@@ -14,7 +14,8 @@ export default function HeroSection() {
         <div className="flex flex-col items-center md:items-end justify-end self-end order-1 md:order-2 relative w-full h-full">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-500 blur-[100px] w-[16rem] h-[16rem] md:w-[24rem] md:h-[24rem] lg:w-[30rem] lg:h-[30rem] opacity-30 dark:opacity-40 rounded-full animate-pulse z-0 pointer-events-none"></div>
           <img
-            src="./about.png"
+            src="./about.webp"
+            fetchpriority="high"
             alt="Yehan Kanishka"
             className="w-[16rem] md:w-[24rem] lg:w-[30rem] h-auto object-contain object-bottom origin-bottom relative z-10 transition-transform duration-700 ease-in-out hover:scale-105" />
         </div>
