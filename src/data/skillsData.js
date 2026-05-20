@@ -48,8 +48,8 @@ export const skillsData = [
       { title: "IntelliJ IDEA", level: "Advanced", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/intellij/intellij-original.svg" },
       { title: "VS Code", level: "Advanced", icon: "https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" },
       { title: "Android Studio", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" },
-      { title: "Xcode", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg" },
-      { title: "PyCharm", level: "Intermediate", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pycharm/pycharm-original.svg" }
+      { title: "Xcode", level: "Beginner", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg" },
+      { title: "PyCharm", level: "Beginner", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pycharm/pycharm-original.svg" }
     ]
   }
 ];

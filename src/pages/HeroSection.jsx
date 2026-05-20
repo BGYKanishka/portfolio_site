@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, Eye, Cpu, Network, Code } from 'lucide-react';
+import { ArrowRight, Download, Cpu, Network, Code, Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
@@ -41,26 +41,6 @@ export default function HeroSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6">
 
               <div className="flex items-start space-x-4">
-                <div className="p-2.5 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg shrink-0">
-                  <Eye size={20} />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 text-base">Computer Vision</h4>
-                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 leading-relaxed">AI detection & real-time processing.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="p-2.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-lg shrink-0">
-                  <Cpu size={20} />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 text-base">IoT & Embedded</h4>
-                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 leading-relaxed">RFID, sensors & hardware integration.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
                 <div className="p-2.5 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-lg shrink-0">
                   <Network size={20} />
                 </div>
@@ -77,6 +57,26 @@ export default function HeroSection() {
                 <div>
                   <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 text-base">Full Stack Web</h4>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 leading-relaxed">React, Node.js & Spring Boot apps.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="p-2.5 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg shrink-0">
+                  <Terminal size={20} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 text-base">Systems Engineering</h4>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 leading-relaxed">Custom logic engines & low-level protocols.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="p-2.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-lg shrink-0">
+                  <Cpu size={20} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 text-base">IoT & Embedded</h4>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 leading-relaxed">RFID, sensors & hardware integration.</p>
                 </div>
               </div>
 

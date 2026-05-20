@@ -38,9 +38,20 @@ export default function ProjectsSection() {
 
               <div className="p-6 md:p-8 flex flex-col flex-grow">
                 
-                <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  {project.title}
-                </h3>
+                <div className="flex flex-wrap items-center gap-3 mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  {project.status && (
+                    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border transition-colors duration-300 ${
+                      project.status === 'Completed'
+                        ? 'bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200/50 dark:border-emerald-500/20'
+                        : 'bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-200/50 dark:border-blue-500/20'
+                    }`}>
+                      {project.status}
+                    </span>
+                  )}
+                </div>
                 
                 <p className="text-zinc-600 dark:text-zinc-400 text-base leading-relaxed mb-6 flex-grow">
                   {project.description}

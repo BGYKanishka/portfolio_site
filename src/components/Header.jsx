@@ -14,9 +14,9 @@ export default function Header({ isDark, toggleTheme }) {
 
   const navLinks = [
     { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
     { name: 'Skills', path: '/skills' },
     { name: 'Projects', path: '/projects' },
-    { name: 'About', path: '/about' },
     { name: 'Connect', path: '/contact' },
   ];
 
