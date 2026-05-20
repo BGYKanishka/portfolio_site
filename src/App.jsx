@@ -8,6 +8,7 @@ import ProjectsSection from './pages/ProjectsSection';
 import ContactSection from './pages/ContactSection'; 
 import Footer from './components/Footer';
 import StarryBackground from './components/StarryBackground';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   const [isDark, setIsDark] = useState(true);
@@ -24,6 +25,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <StarryBackground />
       <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-transparent text-zinc-900 dark:text-zinc-50 font-sans transition-colors duration-300 relative z-10">
         

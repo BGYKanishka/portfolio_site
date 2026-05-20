@@ -1,8 +1,11 @@
 import React from 'react';
+import PageTitle from '../components/PageTitle';
 
 export default function AboutSection() {
   return (
-    <section className="px-6 flex items-center min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-0 md:pb-0 transition-colors duration-300">
+    <>
+      <PageTitle title="About" />
+      <section className="px-6 flex items-center min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-0 md:pb-0 transition-colors duration-300">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
 
         {/* Left Column */}
@@ -50,5 +53,6 @@ export default function AboutSection() {
 
       </div>
     </section>
+    </>
   );
 }

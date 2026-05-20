@@ -1,10 +1,13 @@
 import React from 'react';
 import { projectsData } from '../data/projectsData';
 import { Github, ExternalLink } from 'lucide-react';
+import PageTitle from '../components/PageTitle';
 
 export default function ProjectsSection() {
   return (
-    <section className="px-6 flex flex-col justify-center min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-20 md:pb-20 transition-colors duration-300 relative">
+    <>
+      <PageTitle title="Projects" />
+      <section className="px-6 flex flex-col justify-center min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-20 md:pb-20 transition-colors duration-300 relative">
       
       {/* Background Ambient Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
@@ -22,7 +25,7 @@ export default function ProjectsSection() {
             </span>
           </h2>
           <p className="text-zinc-600 dark:text-zinc-400 text-base md:text-lg max-w-2xl leading-relaxed mx-auto md:mx-0">
-            {/* text */}
+            A selection of my technical work, focusing on systems engineering, distributed architecture, and full-stack development.
           </p>
         </div>
 
@@ -83,15 +86,15 @@ export default function ProjectsSection() {
                     </a>
                   )}
                   
-                  {project.liveLink && (
+                  {project.auxLink && (
                     <a 
-                      href={project.liveLink} 
+                      href={project.auxLink.url} 
                       target="_blank" 
                       rel="noreferrer"
                       className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium text-sm ml-auto"
                     >
                       <ExternalLink size={18} />
-                      <span>Live Demo</span>
+                      <span>{project.auxLink.label}</span>
                     </a>
                   )}
                 </div>
@@ -105,5 +108,6 @@ export default function ProjectsSection() {
 
       </div>
     </section>
+    </>
   );
 }

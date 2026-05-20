@@ -1,9 +1,12 @@
 import React from 'react';
 import { skillsData } from '../data/skillsData';
+import PageTitle from '../components/PageTitle';
 
 export default function SkillsSection() {
   return (
-    <section className="px-6 flex flex-col justify-center min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-20 md:pb-20 transition-colors duration-300 relative">
+    <>
+      <PageTitle title="Skills" />
+      <section className="px-6 flex flex-col justify-center min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-20 md:pb-20 transition-colors duration-300 relative">
       
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500 blur-[120px] opacity-10 dark:opacity-20 rounded-full"></div>
@@ -84,5 +87,6 @@ export default function SkillsSection() {
 
       </div>
     </section>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { sendEmail } from '../services/emailService';
 
 export default function ContactForm() {
   const [status, setStatus] = useState("");
@@ -9,26 +10,14 @@ export default function ContactForm() {
     
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "7aec4ef4-499b-4cac-b9a3-1ff49683ee53");
+    const { success, data, error } = await sendEmail(formData);
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setStatus("Message sent successfully!");
-        event.target.reset();
-      } else {
-        console.error("Error", data);
-        setStatus("Failed to send message. Please try again.");
-      }
-    } catch (error) {
-      console.error("Fetch Error", error);
-      setStatus("An error occurred.");
+    if (success) {
+      setStatus("Message sent successfully!");
+      event.target.reset();
+    } else {
+      console.error("Error", data || error);
+      setStatus("Failed to send message. Please try again.");
     }
   };
 
