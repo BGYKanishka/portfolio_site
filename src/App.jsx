@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
-import HeroSection from './pages/HeroSection';
-import AboutSection from './pages/AboutSection';
-import SkillsSection from './pages/SkillsSection';
-import ProjectsSection from './pages/ProjectsSection';
-import ContactSection from './pages/ContactSection'; 
+import AnimatedRoutes from './components/AnimatedRoutes';
 import Footer from './components/Footer';
 import StarryBackground from './components/StarryBackground';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   const [isDark, setIsDark] = useState(true);
@@ -24,6 +21,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <StarryBackground />
       <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-transparent text-zinc-900 dark:text-zinc-50 font-sans transition-colors duration-300 relative z-10">
         
@@ -32,13 +30,7 @@ export default function App() {
         <div className="pt-24"></div>
 
         <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HeroSection />} />
-            <Route path="/about" element={<AboutSection />} />
-            <Route path="/skills" element={<SkillsSection />} />
-            <Route path="/projects" element={<ProjectsSection />} />
-            <Route path="/contact" element={<ContactSection />} />
-          </Routes>
+          <AnimatedRoutes />
         </main>
         <Footer />
         

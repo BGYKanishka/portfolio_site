@@ -1,10 +1,13 @@
 import React from 'react';
 import { ArrowRight, Download, Cpu, Network, Code, Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageTitle from '../components/PageTitle';
 
 export default function HeroSection() {
   return (
-    <section className="px-6 flex items-end min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-0 md:pb-0">
+    <>
+      <PageTitle title="Home" />
+      <section className="px-6 flex items-end min-h-[calc(100vh-6rem)] pt-28 pb-16 md:pt-0 md:pb-0">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 h-full">
 
         {/* Left Column*/}
@@ -99,5 +102,6 @@ export default function HeroSection() {
 
       </div>
     </section>
+    </>
   );
 }

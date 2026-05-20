@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 
 export default function Header({ isDark, toggleTheme }) {
@@ -54,13 +54,15 @@ export default function Header({ isDark, toggleTheme }) {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <Link 
+            <NavLink 
               key={link.name}
               to={link.path} 
-              className="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white transition-colors"
+              className={({ isActive }) => 
+                `text-sm font-medium transition-colors ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-600 hover:text-black dark:text-zinc-400 dark:hover:text-white'}`
+              }
             >
               {link.name}
-            </Link>
+            </NavLink>
           ))}
           
           <button 
@@ -94,14 +96,16 @@ export default function Header({ isDark, toggleTheme }) {
         <div className="md:hidden bg-white dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800">
           <nav className="flex flex-col px-6 py-4 space-y-4">
             {navLinks.map((link) => (
-              <Link 
+              <NavLink 
                 key={link.name}
                 to={link.path} 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white"
+                className={({ isActive }) => 
+                  `text-sm font-medium transition-colors ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white'}`
+                }
               >
                 {link.name}
-              </Link>
+              </NavLink>
             ))}
           </nav>
         </div>

@@ -1,5 +1,5 @@
 export const sendEmail = async (formData) => {
-  formData.append("access_key", "7aec4ef4-499b-4cac-b9a3-1ff49683ee53");
+  formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
   try {
     const response = await fetch("https://api.web3forms.com/submit", {

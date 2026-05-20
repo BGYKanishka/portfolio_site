@@ -5,7 +5,7 @@ export const projectsData = [
     description: "A systems-level infrastructure tool designed to optimize Docker image distribution. Features an integrated CLI and a custom logic engine in Go, leveraging raw TCP and an embedded bbolt ledger to bypass HTTP overhead for high-speed local network transfers.",
     techStack: ["Go", "Docker", "bbolt", "TCP Sockets", "CLI Architecture"],
     githubLink: "https://github.com/BGYKanishka/baleen-engine",
-    liveLink: null,
+    auxLink: null,
     featured: true,
     status: "Ongoing"
   },
@@ -15,7 +15,7 @@ export const projectsData = [
     description: "An industry-grade distributed microservices platform architected to automate regional tea transportation logistics, track collection weights, and process reliable farmer payments.",
     techStack: ["Microservices", "Distributed Systems", "Backend Architecture"],
     githubLink: "https://github.com/seng31242-tea-route-pay-2026/tea-collection-payment-system",
-    liveLink: null,
+    auxLink: null,
     featured: true,
     status: "Ongoing"
   },
@@ -25,7 +25,7 @@ export const projectsData = [
     description: "An enterprise-grade stall reservation and management system built for the Colombo International Bookfair. Features a decoupled architecture with a REST API backend and a separate frontend interface.",
     techStack: ["Java", "Spring Boot", "PostgreSQL", "React", "REST API"],
     githubLink: "https://github.com/BGYKanishka/architecture_project",
-    liveLink: null,
+    auxLink: null,
     featured: true,
     status: "Completed"
   },
@@ -35,9 +35,8 @@ export const projectsData = [
     description: "A simple, custom-built operating system developed from scratch to understand low-level hardware interactions and kernel architecture. Developed using a WSL Ubuntu environment.",
     techStack: ["Assembly Language", "C", "Linux Kernel", "WSL"],
     githubLink: "https://github.com/BGYKanishka/YehanOS",
-    liveLink: null,
+    auxLink: null,
     featured: false,
     status: "Completed"
   }
-
 ];
