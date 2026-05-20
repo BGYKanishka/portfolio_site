@@ -14,7 +14,7 @@ export default function HeroSection() {
         <div className="flex flex-col items-center md:items-end justify-end self-end order-1 md:order-2 relative w-full h-full">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-500 blur-[100px] w-[16rem] h-[16rem] md:w-[24rem] md:h-[24rem] lg:w-[30rem] lg:h-[30rem] opacity-30 dark:opacity-40 rounded-full animate-pulse z-0 pointer-events-none"></div>
           <img
-            src="/about.png"
+            src="./about.png"
             alt="Yehan Kanishka"
             className="w-[16rem] md:w-[24rem] lg:w-[30rem] h-auto object-contain object-bottom origin-bottom relative z-10 transition-transform duration-700 ease-in-out hover:scale-105" />
         </div>
@@ -92,7 +92,7 @@ export default function HeroSection() {
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
 
-            <a href="/Yehan_Kanishka_CV.pdf" download className="flex items-center justify-center space-x-2 bg-zinc-200 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-zinc-100 px-8 py-4 rounded-full text-base font-medium transition-all group">
+            <a href="./Yehan_Kanishka_CV.pdf" download className="flex items-center justify-center space-x-2 bg-zinc-200 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-zinc-100 px-8 py-4 rounded-full text-base font-medium transition-all group">
               <Download size={18} className="group-hover:-translate-y-1 transition-transform" />
               <span>Download CV</span>
             </a>
