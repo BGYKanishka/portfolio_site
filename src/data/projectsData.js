@@ -5,7 +5,7 @@ export const projectsData = [
     description: "A systems-level infrastructure tool designed to optimize Docker image distribution. Features an integrated CLI and a custom logic engine in Go, leveraging raw TCP and an embedded bbolt ledger to bypass HTTP overhead for high-speed local network transfers.",
     techStack: ["Go", "Docker", "bbolt", "TCP Sockets", "CLI Architecture"],
     githubLink: "https://github.com/BGYKanishka/baleen-engine",
-    auxLink: { url: "https://github.com/BGYKanishka/baleen-engine#architecture", label: "View Architecture" },
+    auxLink: null,
     featured: true,
     status: "Ongoing"
   },
@@ -35,7 +35,7 @@ export const projectsData = [
     description: "A simple, custom-built operating system developed from scratch to understand low-level hardware interactions and kernel architecture. Developed using a WSL Ubuntu environment.",
     techStack: ["Assembly Language", "C", "Linux Kernel", "WSL"],
     githubLink: "https://github.com/BGYKanishka/YehanOS",
-    auxLink: { url: "https://github.com/BGYKanishka/YehanOS#features", label: "View Docs" },
+    auxLink: null,
     featured: false,
     status: "Completed"
   }
